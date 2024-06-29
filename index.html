@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>TuRelojSf</title>
+</head>
+<body>
+    <header>
+        <img class="imagen-header" src="media/Logo Nuevo E.jpeg" alt="">
+        <nav>
+            <button class="button-header" onclick="window.location.href = 'NuevoProducto.html';">Cargar Producto</button>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <div class="contenedor-mostrar">
+            <h2>Lista de Productos</h2>
+            <button class="mostrar-productos" onclick="cargarProductos()">Mostrar Productos</button>
+            <table id="tablaProductos">
+                <thead>
+                    <tr>
+                        <th>idcod</th>
+                        <th>Título</th>
+                        <th>Precio en Pesos</th>
+                        <th>Precio en Dólares</th>
+                        <th>Fecha</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="productosEnTabla">
+                    <!-- aca se cargan los productos de nuestra API -->
+                </tbody>
+            </table>
+        </div>
+
+        <div id="contenedor-modificar">
+            <h2>Modificar Producto</h2>
+            <label for="idcod">ID:</label><br>
+            <input type="text" id="idcod" name="idcod" readonly><br>
+            <label for="tituloMod">Título:</label><br>
+            <input type="text" id="tituloMod" name="tituloMod" required><br>
+            <label for="precioPesoMod">Precio en Pesos:</label><br>
+            <input type="number" id="precioPesoMod" name="precioPesoMod" required><br>
+            <label for="precioDolarMod">Precio en Dólares:</label><br>
+            <input type="number" id="precioDolarMod" name="precioDolarMod" required><br>
+            <label for="fechaMod">Fecha:</label><br>
+            <input type="date" id="fechaMod" name="fechaMod" required><br><br>
+            <button class="guardar-cambios" onclick="modificarProducto()">Guardar Cambios</button>
+        </div>
+    </main>
+    <hr>
+    <footer>
+        <p class="p-footer1">©TuRelojSf</p>
+        <p class="p-footer2">Contacto:3533(216467)</p>
+        <p class="p-footer3">By Prosessional Programmer Bruno Depetris</p>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

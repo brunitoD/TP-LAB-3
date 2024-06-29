@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cargar Producto</title>
+</head>
+<body>
+    <header>
+        <img class="imagen-header" src="media/Logo Nuevo E.jpeg" alt="">
+        <nav>
+            <button class="button-header" onclick="window.location.href = 'index.html';">Volver</button>
+        </nav>
+    </header>
+    <hr>
+    <main class="main-cargar">
+        <form id="productForm">
+            <h2>Crear Nuevo Producto</h2>
+            <label for="titulo">Título:</label><br>
+            <input type="text" id="titulo" name="titulo" required><br>
+            <label for="precioPeso">Precio en Pesos:</label><br>
+            <input type="number" id="precioPeso" name="precioPeso" required><br>
+            <label for="precioDolar">Precio en Dólares:</label><br>
+            <input type="number" id="precioDolar" name="precioDolar" required><br>
+            <label for="fecha">Fecha:</label><br>
+            <input type="date" id="fecha" name="fecha" required><br><br>
+            <button class="crear-producto" type="submit">Crear Producto</button>
+        </form>
+    </main>
+    <hr>
+    <footer>
+        <p class="p-footer">©TuRelojSf</p>
+        <p class="p-footer">Contacto:3533(216467)</p>
+        <p class="p-footer">By Prosessional Programmer Bruno Depetris</p>
+    </footer>
+
+   <script src="script.js"></script>
+</body>
+</html>
